@@ -18,6 +18,7 @@ body {
   margin-left: 20%;
 }
 
+
 #currentStory {
   display:block;
   border-radius: 5px;
@@ -52,4 +53,8 @@ button {
   margin-bottom: 9px;
   margin-right: 19px;
   margin-left: 19px;
+}
+
+#storybox {
+  text-align:center;
 }
