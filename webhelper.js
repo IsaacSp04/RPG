@@ -1,5 +1,5 @@
 window.onload = start;
-
+var hasImage=false;
 var options=[];
 var buttonElement = document.getElementById("button1");
 var currentStoryElement = document.getElementById("currentStory");
@@ -48,4 +48,17 @@ function delayText(text, delay) {
   var timer = setInterval(function () {
     callback(text);
   }, delay);
+}
+
+function addImage(imageURL){
+  let image = document.createElement("img");
+  image.src = imageURL;
+  image.setAttribute("width", "400px");
+  var storyBox = document.getElementById("storybox");
+  if (hasImage == true) {
+      storyBox.innerHTML="";
+  }
+  storyBox.style.textAlign = "center";
+  storyBox.appendChild(image);
+  hasImage = true;
 }
